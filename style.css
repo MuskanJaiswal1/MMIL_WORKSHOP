@@ -1,0 +1,266 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* --------Navbar---------- */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 5;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  list-style: none;
+  margin-right: 15px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Franklin Gothic", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 10px 20px;
+}
+#icon {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", sans-serif;
+  position: absolute;
+  left: 60px;
+}
+#icon a {
+  text-decoration: none;
+  color: black;
+}
+.navbar button {
+  background-color: blue;
+  border-radius: 7px;
+  padding: 12px 18px;
+  border: none;
+  position: absolute;
+  right: 60px;
+}
+.navbar button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+.navbar button:hover {
+  color: rgb(155, 155, 231);
+  color: black;
+}
+
+/* ----------Section1(Parallax)---------- */
+.hero-section {
+  height: 40rem;
+  background-image: url(https://images.pexels.com/photos/2041627/pexels-photo-2041627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  opacity: 0.8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  object-fit: cover;
+  width: 1315px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10rem;
+  margin-bottom: 20%;
+  color: white;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+.hero-section h1 {
+  font-size: 4.5rem;
+  margin: -15px 0px;
+}
+.hero-section p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  letter-spacing: 1.56px;
+  width: 50%;
+}
+.learn {
+  font-size: 0.8rem;
+  margin-top: 3rem;
+}
+/* ---------Section2--------- */
+.section2{
+  background-color: #f1ebeb;
+  height: 100vh;
+}
+.bussiness h2{
+  text-align: center;
+  margin-top: -300px;
+  padding-top: 50px;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.bussiness p{
+text-align: center;
+margin-bottom: 40px;
+margin-left: 200px;
+margin-right: 200px;
+height: 100px;
+color: #9a9898;
+
+}
+.main{
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 50px;
+}
+.card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-box {
+  flex: 1;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 45px 20px;
+  margin: 10px;
+  text-align: center;
+}
+.card-box:hover{
+  box-shadow: 1px 1px 10px 2px rgb(98, 97, 97) ;
+}
+
+.card-box img {
+  height: 140px;
+  width: 150px;
+  margin-bottom: 20px;
+}
+.card-box h3{
+  margin-bottom: 20px;
+}
+.card-box p{
+  color: #9e9d9d;
+}
+.card-box button{
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  color: #9a9898;
+  background-color: #fff;
+}
+
+/* --------------Section3------------ */
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+.img-wrapper {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+.text-wrapper {
+  display: none;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  display: flex;
+  cursor: pointer;
+}
+
+.card::before,
+.card::after {
+  position: absolute;
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.card:hover::before,
+.card:hover:after {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+.card:first-child:hover:before,
+.card:first-child:hover:after {
+  background-color: rgb(73, 73, 243, 0.5);
+}
+.card:last-child:hover:hover:before,
+.card:last-child:hover:hover:after {
+  background-color: rgb(252, 92, 64, 0.5);
+}
+
+.card:first-child:hover:after {
+  content: "Creative Always";
+}
+.card:last-child:hover:after {
+  content: "Ideas & Plans";
+}
+
+/* --------------Section4-------------- */
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+    padding: 0px 5px;
+}
+.block{
+    height: 18rem;
+    width: 20%;
+    padding: 10px 2px;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;  
+}
+.icons{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+
+.service-head{
+    font-size: 1.5rem;
+    align-self: flex-start;   
+}
+.service-txt{
+    font-size: 1rem;
+    color: rgb(106, 103, 103);
+    line-height: 1.4rem;
+    word-spacing: 0.56px;
+    letter-spacing: 0.5px;
+    align-self: flex-start;
+}
+
+/* -------------Section5---------------- */
+.videoo{
+    background-color: #f1ebeb;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.videoo h1{
+    font-size: 45px;
+    font-family: "Franklin Gothic", sans-serif;
+    padding-bottom: 50px;
+}
